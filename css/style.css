@@ -124,7 +124,7 @@ body {
     letter-spacing: 0.1em;
 }
 
-li:first-child .menu__link{
+.menu__link:hover{
     font-weight: 500;
     color: #34547A;
     letter-spacing: 0.1em;
