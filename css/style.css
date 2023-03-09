@@ -158,34 +158,40 @@ body {
   letter-spacing: 0.1em;
   color: inherit;
 }
+.app-header__link--active {
+  color: #34547A;
+}
 /*......................MAIN-BLOCK.................*/
-.main-block {
+.page-main-block  {
   background-color: #EEEFF1;
 }
-.main-block__body {
+.page-main-block__content-wrapper{
+  padding: 166px 0 146px 96px;
+}
+.page-main-block__body{
   display: flex;
-  padding: 166px 0 146px 0;
-  margin-left: 60px;
+  gap: 142px;
+  justify-content: space-between;
 }
 
-.main-block__image {
-  flex: 0 0 328px;
+.page-main-block__image {
+  /*flex: 0 0 328px; */
   object-fit: cover;
   padding-top: 22px;
 }
-.main-block__content {
-  flex: 1 1 auto;
-  padding: 0 0 0 142px;
+.page-main-block__content {
+  /*flex: 1 1 auto; */
+  /* padding: 0 0 0 142px;*/
 }
-.main-block__content > *:not(:last-child) {
+.page-main-block__content > *:not(:last-child) {
   margin: 0px 0px 60px 0px;
 }
 
-.main-block__title {
+.page-main-block__title {
   font-weight: 500;
   font-size: 48px;
 }
-.main-block__text {
+.page-main-block__text {
   color: #727272;
   line-height: 162%;
   max-width: 540px;
