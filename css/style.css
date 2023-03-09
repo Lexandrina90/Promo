@@ -197,7 +197,7 @@ body {
   max-width: 540px;
 }
 /*...............ABOUT.......................*/
-.about__container {
+.page-about__content-wrapper {
   padding: 119px 0 100px 0;
   max-width: 540px;
 }
@@ -216,41 +216,43 @@ body {
 }
 
 /*......SKILLS........................................ */
-.skills {
+.page-skills {
   padding: 102px 0;
 }
-.skills__body {
+.page-skills__body {
   display: flex;
   align-items: flex-start;
 }
-.skills__content {
+.page-skills__content {
   flex: 1 1 auto;
   padding: 102px 150px 0 0;
 }
 
-.skills__header .header-block__title {
+.page-skills__header .text-block__title {
   text-align: start;
 }
-.item-skills__subtitle {
+.page-skills-item__subtitle {
   color: #727272;
-  position: relative;
   margin: 0px 0px 54px 0px;
 }
 
-.item-skills__subtitle::before {
+.page-skills-item__level {
+  position: relative;
+}
+.page-skills-item__level::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -20px;
+  top: -40px;
   background: #34547a;
   width: 349px;
   height: 4px;
 }
-.item-skills__subtitle::after {
+.page-skills-item__level::after {
   content: "";
   position: absolute;
   left: 349px;
-  bottom: -20px;
+  top: -40px;
   background: #c4c4c4;
   width: 95px;
   height: 4px;
