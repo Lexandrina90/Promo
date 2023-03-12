@@ -346,6 +346,53 @@ html {
   cursor: pointer;
 }
 
+/*.......PAGE-FORM.............................*/
+.page-contacts{
+  padding: 100px 16px;
+  background-color: #EEEFF1;
+}
+.page-contacts__form {
+  max-width: 540px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 65px 0;
+  margin: 0 auto;
+}
+.page-contacts__form input {
+  padding: 0 20px;
+}
+.page-contacts__form textarea {
+  padding: 17px 20px;
+}
+.page-contacts__name{
+  height: 50px;
+  flex: 0 1 210px;
+}
+.page-contacts__email {
+  height: 50px;
+  flex:  0 1 210px;
+}
+.page-contacts__message {
+  width: 540px;
+  height: 175px;
+  flex: 1 1 100%;
+  margin-top: -10px;
+  resize: none;
+}
+
+.page-contacts__button {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  line-height: 164%;
+  padding: 20px 19px;
+  width: 190px;
+  height: 55px;
+}
+
 
 
 
