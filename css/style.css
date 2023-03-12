@@ -393,6 +393,37 @@ html {
   height: 55px;
 }
 
+/*.......APP-FOOTER.....................*/
+.app-footer {
+  padding: 50px 90px;
+  background: #34547A;
+}
+.app-footer__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app-footer__left {
+  color: #FFFFFF;
+}
+.app-footer__name {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 119%;
+}
+.app-footer__copy {
+  font-size: 13px;
+  line-height: 162%;
+}
+.app-footer__socials {
+  display: flex;
+  align-items: center;
+}
+.app-footer__social:not(:last-child) {
+  margin: 0px 22px 0px 0px;
+}
+
 
 
 
