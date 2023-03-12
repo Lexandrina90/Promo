@@ -259,39 +259,51 @@ body {
 }
 
 /*...........VIDEO..................................*/
-.process {
+.page-process {
   padding: 100px 0;
   background-color: #EEEFF1;
 }
-.process__header{
+.page-process__header{
   padding-bottom: 57px;
 }
-.video__container{
-  position: relative;
-}
-.video__image {
-  opacity: 1;
+.process-video__container {
   display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+  background: url(../img/process/video.png) no-repeat;
+  height: 600px;
+  width: 1110px;
+  position: relative;
+  background-size: cover;
 }
-.video__overlay {
-  transition: .5s ease;
+.process-video__overlay {
   opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  transition: opacity 1s ease-in-out;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/process/video.png) no-repeat;
+  background-size: cover;
+}
+.process-video__container:hover .process-video__overlay {
+  opacity: 1;
+}
+
+.process-video__icon{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.video__container:hover .video__image {
-  opacity: 0.3;
-}
-.video__container:hover .video__overlay {
-  opacity:1;
   cursor: pointer;
+
 }
+
+
+
 
