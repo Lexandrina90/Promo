@@ -285,7 +285,7 @@ html {
 @media (max-width: 480px) {
   .page-main-block__content-wrapper {
     padding: 17px 0 95px 0px;
-    margin: 0 36px 0 37px;
+    margin: 0 36px;
   }
   .page-main-block__title {
     max-width: 302px;
@@ -294,15 +294,20 @@ html {
     max-width: 322px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 374px) {
+  .page-main-block__title {
+    font-size: 30px;
+  } 
   .page-main-block__body {
     gap: 30px;
   }
   .page-main-block__content > *:not(:last-child) {
     margin: 0px 0px 30px 0px;
   }
-  .page-main-block__content-wrapper {
-    padding: 5px 0 45px 39px;
+}
+@media (max-width: 320px) {
+  .page-main-block__title {
+    font-size: 25px;
   }
 }
 /*...............ABOUT.......................*/
