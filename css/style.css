@@ -137,17 +137,16 @@ html {
 }
 @media (max-width: 620px) {
   .text-block__description {
-   max-width: 400px;
-   margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 480px) {
   .text-block__description {
-   max-width: 323px;
-   margin: 0 26px;
+    max-width: 323px;
+    margin: 0 26px;
   }
 }
-
 
 /*......HEADER.....................................*/
 .app-header {
@@ -216,7 +215,7 @@ html {
   padding-top: 22px;
 }
 
-.page-main-block__image  img {
+.page-main-block__image img {
   object-fit: cover;
   height: auto;
   width: 100%;
@@ -297,7 +296,7 @@ html {
 @media (max-width: 374px) {
   .page-main-block__title {
     font-size: 30px;
-  } 
+  }
   .page-main-block__body {
     gap: 30px;
   }
@@ -344,13 +343,13 @@ html {
   gap: 49px;
   justify-content: center;
 }
- @media (max-width: 1279px) {
+@media (max-width: 1279px) {
   .page-projects__items-container {
     flex-wrap: wrap;
     gap: 30px;
   }
- }
- @media (max-width: 992px) {
+}
+@media (max-width: 992px) {
   .page-projects__content-wrapper {
     padding: 75px 0;
   }
@@ -360,8 +359,8 @@ html {
   .page-projects__items-container {
     gap: 57px;
   }
- }
- @media (max-width: 320px) {
+}
+@media (max-width: 320px) {
   .page-projects__content-wrapper {
     padding: 50px 0;
   }
@@ -371,7 +370,7 @@ html {
   .page-projects__item {
     flex: 0 1 50%;
   }
- }
+}
 
 /*......SKILLS........................................ */
 .page-skills {
@@ -383,7 +382,7 @@ html {
   gap: 150px;
 }
 
-.page-skills__image  img {
+.page-skills__image img {
   object-fit: cover;
   height: auto;
   width: 100%;
@@ -424,7 +423,7 @@ html {
   height: 4px;
 }
 
-@media(max-width: 1279px) {
+@media (max-width: 1279px) {
   .page-skills__body {
     flex-wrap: wrap;
   }
@@ -476,7 +475,7 @@ html {
     margin: 0 -60px;
   }
 }
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .page-skills-item__level::before {
     width: 232px;
   }
@@ -489,7 +488,6 @@ html {
   }
 }
 
-
 /*...........VIDEO..................................*/
 .page-process {
   padding: 100px 0;
@@ -499,12 +497,17 @@ html {
   padding-bottom: 57px;
 }
 .process-video__container {
-  display: block;
-  background: url(../img/process/video.png) no-repeat;
-  height: 600px;
-  width: 1110px;
   position: relative;
-  background-size: cover;
+  display: block;
+}
+.process-video__image {
+  position: relative;
+  display: block;
+}
+.process-video__image img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 .process-video__overlay {
   opacity: 0;
@@ -519,7 +522,7 @@ html {
   color: #fff;
   font-size: 32px;
   transition: opacity 1s ease-in-out;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/process/video.png) no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
   background-size: cover;
 }
 .process-video__container:hover .process-video__overlay {
@@ -533,6 +536,23 @@ html {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   cursor: pointer;
+}
+.process-video__icon img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  max-width: 100px;
+}
+
+@media (max-width: 1279px) {
+  .page-process {
+    padding: 93px 0;
+  }
+}
+@media (max-width: 760px) {
+  .process-video__icon img {
+    max-width: 75px;
+  }
 }
 
 /*.........PAGE-WORKS............................*/
