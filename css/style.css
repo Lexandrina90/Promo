@@ -134,6 +134,10 @@ html {
   .text-block__title {
     margin: 0px 0px 42px 0px;
   }
+  .text-block__description {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 620px) {
   .text-block__description {
@@ -176,6 +180,23 @@ html {
   .app-header__links-container {
     display: none;
   }
+  .app-header__content-wrapper {
+    padding: 22px 0;
+  }
+  .app-header__button {
+    display: block;
+  }
+  .app-header__hamburger {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
 }
 
 .app-header__link {
@@ -188,6 +209,11 @@ html {
 .app-header__link--active {
   color: #34547a;
 }
+
+.app-header__button {
+  display: none;
+}
+
 /*......................MAIN-BLOCK.................*/
 .page-main-block {
   background-color: #eeeff1;
@@ -572,7 +598,7 @@ html {
   position: relative;
 }
 
-.page-works__item img{
+.page-works__item img {
   object-fit: cover;
   height: auto;
   width: 100%;
@@ -659,24 +685,23 @@ html {
   margin: 0 auto;
 }
 .page-contacts__form input {
-  padding: 0 20px;
+  padding: 0px 20px;
 }
 .page-contacts__form textarea {
   padding: 17px 20px;
 }
 .page-contacts__name {
   height: 50px;
-  flex: 0 1 210px;
+  flex: 0 1 39.81%;
 }
 .page-contacts__email {
   height: 50px;
-  flex: 0 1 210px;
+  flex: 0 1 39.81%;
 }
 .page-contacts__message {
   width: 540px;
   height: 175px;
   flex: 1 1 100%;
-  margin-top: -10px;
   resize: none;
 }
 
@@ -689,6 +714,20 @@ html {
   padding: 20px 19px;
   width: 190px;
   height: 55px;
+}
+@media (max-width: 611px) {
+  .page-contacts {
+    padding-top: 91px;
+  }
+  .page-contacts__form {
+    gap: 22px;
+  }
+  .page-contacts__name {
+    flex: 1 1 100%;
+  }
+  .page-contacts__email {
+    flex: 1 1 100%;
+  }
 }
 
 /*.......APP-FOOTER.....................*/
@@ -711,8 +750,10 @@ html {
   line-height: 119%;
 }
 .app-footer__copy {
+  font-weight: 400;
   font-size: 13px;
   line-height: 162%;
+  min-width: 193px;
 }
 .app-footer__socials {
   display: flex;
@@ -720,4 +761,21 @@ html {
 }
 .app-footer__social:not(:last-child) {
   margin: 0px 22px 0px 0px;
+}
+@media (max-width: 992px) {
+  .app-footer__content-wrapper {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 580px) {
+  .app-footer__content-wrapper {
+    
+    justify-content: center;
+  }
+  .app-footer__left {
+    margin: 0px 0px 20px 0px;
+  }
+  .app-footer__name {
+    text-align: center;
+  }
 }
