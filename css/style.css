@@ -100,7 +100,6 @@ html {
   padding-right: 20px;
   box-sizing: border-box;
 }
-
 /*.....BUTTON.....................*/
 .button {
   background: #34547a;
@@ -149,7 +148,7 @@ html {
   }
 }
 .app-header__logo-image {
-  height: 38px;
+  /*height: 38px; */
 }
 .app-header__links-container {
   display: flex;
@@ -195,9 +194,14 @@ html {
 }
 
 .page-main-block__image {
-  /*flex: 0 0 328px; */
-  object-fit: cover;
   padding-top: 22px;
+}
+
+.page-main-block__image  img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+  max-width: 357px;
 }
 .page-main-block__content {
   /*flex: 1 1 auto; */
