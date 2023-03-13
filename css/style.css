@@ -130,6 +130,25 @@ html {
   color: #727272;
   line-height: 162%;
 }
+@media (max-width: 991px) {
+  .text-block__title {
+    margin: 0px 0px 42px 0px;
+  }
+}
+@media (max-width: 620px) {
+  .text-block__description {
+   max-width: 400px;
+   margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .text-block__description {
+   max-width: 323px;
+   margin: 0 26px;
+  }
+}
+
+
 /*......HEADER.....................................*/
 .app-header {
   background-color: #eeeff1;
@@ -265,16 +284,46 @@ html {
 }
 @media (max-width: 480px) {
   .page-main-block__content-wrapper {
-    padding: 17px 0 95px 39px;
+    padding: 17px 0 95px 0px;
+    margin: 0 36px 0 37px;
   }
-  .page-main-block__content {
+  .page-main-block__title {
+    max-width: 302px;
+  }
+  .page-main-block__text {
     max-width: 322px;
+  }
+}
+@media (max-width: 320px) {
+  .page-main-block__body {
+    gap: 30px;
+  }
+  .page-main-block__content > *:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+  }
+  .page-main-block__content-wrapper {
+    padding: 5px 0 45px 39px;
   }
 }
 /*...............ABOUT.......................*/
 .page-about__content-wrapper {
   padding: 119px 0 100px 0;
   max-width: 540px;
+}
+@media (min-width: 992px) and (max-width: 1279px) {
+  .page-about__content-wrapper {
+    padding: 109px 0 90px 0;
+  }
+}
+@media (max-width: 991px) {
+  .page-about__content-wrapper {
+    padding: 91px 0 82px 0;
+  }
+}
+@media (max-width: 480px) {
+  .page-about__content-wrapper {
+    padding: 91px 0 82px 0;
+  }
 }
 
 /*.........Projects.........................*/
